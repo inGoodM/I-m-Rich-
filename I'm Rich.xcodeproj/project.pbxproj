@@ -13,6 +13,7 @@
 		B7FB844D2832627B001807F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FB844B2832627B001807F9 /* Main.storyboard */; };
 		B7FB844F2832627F001807F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7FB844E2832627F001807F9 /* Assets.xcassets */; };
 		B7FB84522832627F001807F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FB84502832627F001807F9 /* LaunchScreen.storyboard */; };
+		B7FB845E28327D00001807F9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FB845D28327D00001807F9 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B7FB844E2832627F001807F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7FB84512832627F001807F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7FB84532832627F001807F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7FB845D28327D00001807F9 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				B7FB84452832627B001807F9 /* AppDelegate.swift */,
 				B7FB84472832627B001807F9 /* SceneDelegate.swift */,
 				B7FB84492832627B001807F9 /* ViewController.swift */,
+				B7FB845D28327D00001807F9 /* GradientView.swift */,
 				B7FB844B2832627B001807F9 /* Main.storyboard */,
 				B7FB844E2832627F001807F9 /* Assets.xcassets */,
 				B7FB84502832627F001807F9 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				B7FB844A2832627B001807F9 /* ViewController.swift in Sources */,
 				B7FB84462832627B001807F9 /* AppDelegate.swift in Sources */,
+				B7FB845E28327D00001807F9 /* GradientView.swift in Sources */,
 				B7FB84482832627B001807F9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,13 +7,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController, loadingItemDelegate  {
+    var color: Int = 0
+   
+    @IBOutlet weak var imRichLable: UILabel!
+    @IBOutlet weak var loadingItem: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
+       
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        loadingItem.tintColor = .black
+        imRichLable.font = .systemFont(ofSize: 60)
+        imRichLable.textColor = .white
+        imRichLable.shadowColor = .black
+        print(color)
+        
     }
-
-
+    
+   
+    
 }
 
