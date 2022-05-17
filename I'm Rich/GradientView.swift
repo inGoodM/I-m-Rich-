@@ -29,8 +29,6 @@ extension UIColor {
 
 class GradientView: UIView {
     
-    var viewControllerDelegate = ViewController()
-    
     @IBInspectable var topColor: UIColor = .systemMint
     @IBInspectable var midlleColor: UIColor = .systemTeal
     @IBInspectable var bottomColor: UIColor = .systemCyan
@@ -55,7 +53,7 @@ class GradientView: UIView {
         
         // Change gradients color with time interval 2 sec
         
-        Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { _ in
+        Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { [self] _ in
             gradientLayer.colors = [UIColor.random.cgColor, UIColor.random.cgColor, UIColor.random.cgColor]
         })
     
