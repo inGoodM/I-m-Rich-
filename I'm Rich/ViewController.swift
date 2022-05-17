@@ -9,21 +9,24 @@ import UIKit
 
 
 class ViewController: UIViewController, loadingItemDelegate  {
+    
     var color: Int = 0
    
     @IBOutlet weak var imRichLable: UILabel!
-    @IBOutlet weak var loadingItem: UIActivityIndicatorView!
+    @IBOutlet weak var buttonOutLet: UIButton!
     
     override func viewDidLoad() {
        
         super.viewDidLoad()
-        
-        loadingItem.tintColor = .black
+        buttonOutLet.setTitle("Change lable", for: .normal)
+        buttonOutLet.tintColor = .systemYellow
         imRichLable.font = .systemFont(ofSize: 60)
         imRichLable.textColor = .white
         imRichLable.shadowColor = .black
-        print(color)
         
+    }
+    @IBAction func changeTextLable(_ sender: UIButton) {
+        imRichLable.text = "I'm very Rich!"
     }
     
    

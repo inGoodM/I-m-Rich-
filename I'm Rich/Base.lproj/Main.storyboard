@@ -31,11 +31,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LoM-sF-hRP">
-                                <rect key="frame" x="197" y="716" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="color" systemColor="systemPinkColor"/>
-                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZF-0d-cyE">
+                                <rect key="frame" x="100" y="712" width="214" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="mhe-gS-WZQ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="rZU-pf-vat"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <connections>
+                                    <action selector="changeTextLable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="izi-3I-Bsz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -43,26 +50,26 @@
                             <constraint firstItem="1vP-Hu-dnt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="150" id="CSK-MW-BgO"/>
                             <constraint firstItem="v3X-0o-fSc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D0E-vA-L3s"/>
                             <constraint firstItem="v3X-0o-fSc" firstAttribute="top" secondItem="1vP-Hu-dnt" secondAttribute="bottom" constant="100" id="FXs-gI-WPv"/>
+                            <constraint firstItem="JZF-0d-cyE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="iH0-Xu-jqO"/>
                             <constraint firstItem="1vP-Hu-dnt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mAr-dX-qtD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JZF-0d-cyE" secondAttribute="trailing" constant="100" id="mMB-QC-EKr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JZF-0d-cyE" secondAttribute="bottom" constant="100" id="uiY-UC-PmV"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonOutLet" destination="JZF-0d-cyE" id="loY-ye-nip"/>
                         <outlet property="imRichLable" destination="v3X-0o-fSc" id="TWz-Zz-YAK"/>
-                        <outlet property="loadingItem" destination="LoM-sF-hRP" id="bWh-lt-WGC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="98"/>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
         <image name="toppng.com-white-diamond-1233x1233" width="278" height="278"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
