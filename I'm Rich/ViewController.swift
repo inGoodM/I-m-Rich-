@@ -23,7 +23,7 @@ class ViewController: UIViewController, loadingItemDelegate  {
         imRichLable.font = .systemFont(ofSize: 60)
         imRichLable.textColor = .white
         imRichLable.shadowColor = .black
-        buttonOutLet.titleLabel?.textColor = .white
+        buttonOutLet.titleLabel?.textColor = .black
         
     }
     @IBAction func changeTextLable(_ sender: UIButton) {
